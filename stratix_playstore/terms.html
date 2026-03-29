@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="theme-color" content="#F7C948"/>
+<title>Terms of Service — Stratix One</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{min-height:100%;background:#0B0F1E;color:#EDF1F7;font-family:'Plus Jakarta Sans',sans-serif;-webkit-font-smoothing:antialiased;}
+body{-webkit-tap-highlight-color:transparent;}
+:root{
+  --gold:#F7C948;--bg:#0B0F1E;--s1:#111827;--b1:#1E2847;--b2:#28345A;
+  --t1:#EDF1F7;--t2:#8892A4;--t3:#4A5568;--green:#22C55E;--red:#F43F5E;--r:14px;
+}
+
+.pg-hdr{
+  position:sticky;top:0;z-index:100;
+  background:rgba(11,15,30,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--b1);
+  padding:14px 20px;
+  display:flex;align-items:center;gap:14px;
+}
+.pg-back{
+  width:36px;height:36px;background:var(--s1);border:1px solid var(--b2);
+  border-radius:10px;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:16px;color:var(--t2);text-decoration:none;
+  flex-shrink:0;transition:border-color .2s;
+}
+.pg-back:active{border-color:var(--gold);}
+.pg-mark{
+  width:32px;height:32px;background:var(--gold);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:monospace;font-size:11px;font-weight:700;color:#000;flex-shrink:0;
+}
+.pg-ttl{font-size:16px;font-weight:800;letter-spacing:-.3px;}
+.pg-sub{font-size:11px;color:var(--t3);margin-top:1px;}
+.pg-body{padding:24px 20px 60px;max-width:640px;margin:0 auto;}
+
+.tos-hero{
+  background:var(--s1);border:1px solid var(--b1);border-radius:20px;
+  padding:24px;margin-bottom:28px;text-align:center;
+}
+.tos-hero-ico{font-size:44px;margin-bottom:12px;}
+.tos-hero-t{font-size:20px;font-weight:800;letter-spacing:-.4px;margin-bottom:6px;}
+.tos-hero-s{font-size:13px;color:var(--t2);line-height:1.6;max-width:290px;margin:0 auto 16px;}
+.tos-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(247,201,72,.08);border:1px solid rgba(247,201,72,.2);
+  border-radius:50px;padding:5px 14px;
+  font-size:11px;font-weight:700;color:var(--gold);
+}
+
+.tos-sec{margin-bottom:22px;}
+.tos-sec-hdr{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.tos-sec-num{
+  width:28px;height:28px;background:var(--gold);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:800;color:#000;flex-shrink:0;
+}
+.tos-sec-ttl{font-size:15px;font-weight:800;color:var(--t1);}
+.tos-card{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r);padding:16px;}
+.tos-card p{font-size:13.5px;color:var(--t2);line-height:1.72;margin-bottom:10px;}
+.tos-card p:last-child{margin-bottom:0;}
+.tos-card ul{padding-left:18px;margin-bottom:0;}
+.tos-card li{font-size:13.5px;color:var(--t2);line-height:1.72;margin-bottom:7px;}
+.tos-card li:last-child{margin-bottom:0;}
+.tos-card strong{color:var(--t1);font-weight:700;}
+.tos-card a{color:var(--gold);text-decoration:none;}
+
+.warn-box{
+  background:rgba(244,63,94,.07);border:1px solid rgba(244,63,94,.2);
+  border-radius:10px;padding:14px;margin-top:10px;
+}
+.warn-box-ico{font-size:18px;margin-bottom:6px;}
+.warn-box p{color:#fca5a5!important;font-size:13px!important;}
+.warn-box strong{color:#f87171!important;}
+
+.info-box{
+  background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.2);
+  border-radius:10px;padding:12px 14px;margin-top:10px;
+}
+.info-box p{color:#93c5fd!important;}
+
+.tos-footer{
+  background:var(--s1);border:1px solid var(--b1);border-radius:var(--r);
+  padding:20px;text-align:center;margin-top:32px;
+}
+.tos-footer-ttl{font-size:14px;font-weight:800;margin-bottom:6px;}
+.tos-footer-s{font-size:12px;color:var(--t2);line-height:1.6;margin-bottom:12px;}
+.tos-footer a{color:var(--gold);}
+.tos-footer-meta{font-size:10px;color:var(--t3);margin-top:14px;padding-top:14px;border-top:1px solid var(--b1);}
+
+.quick-nav{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:24px;
+}
+.qn-item{
+  background:var(--s1);border:1px solid var(--b1);border-radius:12px;
+  padding:12px;font-size:12px;font-weight:600;color:var(--t2);
+  text-decoration:none;text-align:center;transition:border-color .2s;
+}
+.qn-item:active{border-color:var(--gold);color:var(--t1);}
+</style>
+</head>
+<body>
+
+<div class="pg-hdr">
+  <a class="pg-back" href="javascript:history.back()" aria-label="Go back">←</a>
+  <div class="pg-mark">SX</div>
+  <div>
+    <div class="pg-ttl">Terms of Service</div>
+    <div class="pg-sub">Stratix One · Updated January 2025</div>
+  </div>
+</div>
+
+<div class="pg-body">
+
+  <div class="tos-hero">
+    <div class="tos-hero-ico">📋</div>
+    <div class="tos-hero-t">Terms of Service</div>
+    <div class="tos-hero-s">By using Stratix One, you agree to these terms. Please read them carefully before using the app.</div>
+    <div class="tos-badge">⚖️ Plain language · Honest · Fair</div>
+  </div>
+
+  <!-- Quick nav -->
+  <div class="quick-nav">
+    <a href="#accept" class="qn-item">1. Acceptance</a>
+    <a href="#service" class="qn-item">2. Service Description</a>
+    <a href="#use" class="qn-item">3. Acceptable Use</a>
+    <a href="#records" class="qn-item">4. Record Disclaimer</a>
+    <a href="#data" class="qn-item">5. Data Responsibility</a>
+    <a href="#liability" class="qn-item">6. Limitation of Liability</a>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="tos-sec" id="accept">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">1</div>
+      <div class="tos-sec-ttl">Acceptance of Terms</div>
+    </div>
+    <div class="tos-card">
+      <p>By downloading, installing, or using <strong>Stratix One</strong> (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+      <p>These Terms constitute a legal agreement between you (the "User") and the Stratix team ("we", "us", or "our"). We may update these Terms from time to time, and your continued use of the App constitutes acceptance of any changes.</p>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="tos-sec" id="service">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">2</div>
+      <div class="tos-sec-ttl">Description of Service</div>
+    </div>
+    <div class="tos-card">
+      <p>Stratix One is a <strong>free business management tool</strong> designed for Indian MSME shop owners, kirana stores, and daily traders. The App provides:</p>
+      <ul>
+        <li><strong>Daily Ledger</strong> — Track daily income and expenses.</li>
+        <li><strong>Khata Book</strong> — Manage customer dues and credit (udhaar).</li>
+        <li><strong>WhatsApp Billing</strong> — Create and share bills with customers via WhatsApp.</li>
+        <li><strong>Notes</strong> — Write and save business notes.</li>
+        <li><strong>Cloud Sync</strong> — Optionally sync data across devices using Google Firebase.</li>
+        <li><strong>Backup / Export</strong> — Export data as JSON or CSV.</li>
+      </ul>
+      <div class="info-box">
+        <p>ℹ️ The App is provided free of charge for personal business record-keeping. Features may be updated, modified, or discontinued at our discretion.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="tos-sec" id="use">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">3</div>
+      <div class="tos-sec-ttl">Acceptable Use</div>
+    </div>
+    <div class="tos-card">
+      <p>You agree to use Stratix One only for lawful business purposes. You must <strong>not</strong>:</p>
+      <ul>
+        <li>Use the App to record, facilitate, or conceal illegal financial activities, including money laundering, tax evasion, or fraud.</li>
+        <li>Attempt to reverse-engineer, decompile, copy, or redistribute the App or its code.</li>
+        <li>Use the App to send spam or harass customers via WhatsApp or other channels.</li>
+        <li>Share your Google account credentials with third parties.</li>
+        <li>Use automated bots or scripts to interact with the App.</li>
+        <li>Attempt to gain unauthorized access to Firebase infrastructure or other users' data.</li>
+      </ul>
+      <p>We reserve the right to terminate access for users who violate these terms.</p>
+    </div>
+  </div>
+
+  <!-- Section 4: Critical disclaimer -->
+  <div class="tos-sec" id="records">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">4</div>
+      <div class="tos-sec-ttl">Disclaimer About Business Records</div>
+    </div>
+    <div class="tos-card">
+      <div class="warn-box">
+        <div class="warn-box-ico">⚠️</div>
+        <p><strong>Important — Please Read Carefully:</strong></p>
+        <p>Stratix One is a <strong>personal convenience tool for daily business tracking</strong>. It is <strong>NOT</strong> a certified accounting software and does not automatically comply with statutory Indian accounting, GST, or taxation requirements.</p>
+      </div>
+      <p style="margin-top:12px;">Specifically, you acknowledge that:</p>
+      <ul>
+        <li>Records in Stratix One should <strong>not</strong> be used as the <strong>sole</strong> basis for GST filing, income tax returns, or legal disputes.</li>
+        <li>The App does not generate GST-compliant invoices with GSTIN. Use Stratix Lite (our advanced app) or a certified accounting tool for GST invoices.</li>
+        <li>You are responsible for maintaining official books of accounts as required under applicable Indian law (e.g., the Companies Act, Income Tax Act, GST Act).</li>
+        <li>You should always verify figures with a qualified <strong>Chartered Accountant (CA)</strong> for statutory compliance.</li>
+        <li>The App provides approximate financial summaries for personal reference only.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 5 -->
+  <div class="tos-sec" id="data">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">5</div>
+      <div class="tos-sec-ttl">Data Responsibility</div>
+    </div>
+    <div class="tos-card">
+      <p>Your business data is stored on your device using browser localStorage. You are responsible for keeping backups of your data. We strongly recommend:</p>
+      <ul>
+        <li>Regularly exporting data using <strong>Settings → Local Backup → Export JSON</strong>.</li>
+        <li>Enabling <strong>Cloud Sync</strong> for automatic backup to Google Firebase.</li>
+      </ul>
+      <p>We are <strong>not responsible</strong> for data loss due to:</p>
+      <ul>
+        <li>Device damage, loss, or factory reset.</li>
+        <li>Browser cache clearing or storage limits exceeded.</li>
+        <li>App uninstallation or reinstallation.</li>
+        <li>Network failures during Cloud Sync.</li>
+        <li>Firebase service outages (which are governed by Google's SLA).</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="tos-sec" id="liability">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">6</div>
+      <div class="tos-sec-ttl">Limitation of Liability</div>
+    </div>
+    <div class="tos-card">
+      <p>Stratix One is provided <strong>"as is"</strong> and <strong>"as available"</strong> without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+      <p>To the maximum extent permitted by applicable law, we shall not be liable for:</p>
+      <ul>
+        <li>Any direct, indirect, incidental, or consequential business losses arising from use of the App.</li>
+        <li>Errors, inaccuracies, or omissions in financial records.</li>
+        <li>Loss of data or inability to access data.</li>
+        <li>Interruptions in service, bugs, or technical failures.</li>
+        <li>Actions taken by third-party services (Firebase, Google, WhatsApp).</li>
+        <li>Any financial decisions made based on data in the App.</li>
+      </ul>
+      <div class="info-box">
+        <p>ℹ️ Our total liability to you for any claim arising out of or relating to the App shall not exceed ₹0 (zero rupees), as the App is provided entirely free of charge.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="tos-sec">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">7</div>
+      <div class="tos-sec-ttl">Google Sign-In</div>
+    </div>
+    <div class="tos-card">
+      <p>Google Sign-In is <strong>optional</strong>. You may use the App without signing in (data will be stored locally only). If you choose to sign in with Google:</p>
+      <ul>
+        <li>Your sign-in is governed by <a href="https://policies.google.com/terms" target="_blank">Google's Terms of Service</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+        <li>We receive your Google account name, email, and profile photo to identify your account.</li>
+        <li>You can sign out at any time from the app's Profile section.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 8 -->
+  <div class="tos-sec">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">8</div>
+      <div class="tos-sec-ttl">Intellectual Property</div>
+    </div>
+    <div class="tos-card">
+      <p>The Stratix One app, including its design, code, logo, and branding, is the intellectual property of the Stratix team. You are granted a limited, non-exclusive, non-transferable license to use the App for your personal business tracking purposes.</p>
+      <p>You may not copy, modify, distribute, sell, or lease any part of the App without our written permission.</p>
+    </div>
+  </div>
+
+  <!-- Section 9 -->
+  <div class="tos-sec">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">9</div>
+      <div class="tos-sec-ttl">Changes to Terms</div>
+    </div>
+    <div class="tos-card">
+      <p>We reserve the right to update these Terms at any time. We will notify users of significant changes through an in-app notice. The date of the last revision is shown at the bottom of this page. Your continued use of the App after any changes constitutes your acceptance of the new Terms.</p>
+    </div>
+  </div>
+
+  <!-- Section 10 -->
+  <div class="tos-sec">
+    <div class="tos-sec-hdr">
+      <div class="tos-sec-num">10</div>
+      <div class="tos-sec-ttl">Governing Law & Disputes</div>
+    </div>
+    <div class="tos-card">
+      <p>These Terms are governed by the laws of the <strong>Republic of India</strong>. Any disputes arising out of or relating to these Terms or the App shall be subject to the exclusive jurisdiction of the courts of India.</p>
+      <p>We encourage you to contact us first at <a href="mailto:support@stratix.app">support@stratix.app</a> to resolve any issues informally before pursuing legal remedies.</p>
+    </div>
+  </div>
+
+  <!-- Also see Privacy Policy -->
+  <div style="background:rgba(247,201,72,.07);border:1px solid rgba(247,201,72,.18);border-radius:var(--r);padding:16px;margin-bottom:24px;display:flex;align-items:center;gap:14px;">
+    <div style="font-size:28px;">🔒</div>
+    <div>
+      <div style="font-size:13px;font-weight:800;color:var(--t1);margin-bottom:3px;">Also Read Our Privacy Policy</div>
+      <div style="font-size:12px;color:var(--t2);margin-bottom:8px;">Understand how we protect your data and what we collect.</div>
+      <a href="privacy.html" style="display:inline-block;background:var(--gold);color:#000;font-size:12px;font-weight:800;padding:7px 16px;border-radius:8px;text-decoration:none;">View Privacy Policy →</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="tos-footer">
+    <div class="tos-footer-ttl">📬 Questions or Feedback?</div>
+    <div class="tos-footer-s">Reach out to us — we're happy to clarify any part of these Terms.</div>
+    <a href="mailto:support@stratix.app" style="display:inline-block;background:#F7C948;color:#000;font-size:14px;font-weight:800;padding:11px 24px;border-radius:50px;text-decoration:none;">support@stratix.app</a>
+    <div class="tos-footer-meta">Stratix One v1.0 · Terms of Service · Last Updated: January 2025<br/>These Terms apply to the Stratix One Android app and web app.</div>
+  </div>
+
+</div>
+
+</body>
+</html>
