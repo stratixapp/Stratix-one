@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="theme-color" content="#F7C948"/>
+<title>Privacy Policy — Stratix One</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{min-height:100%;background:#0B0F1E;color:#EDF1F7;font-family:'Plus Jakarta Sans',sans-serif;-webkit-font-smoothing:antialiased;}
+body{padding:0;-webkit-tap-highlight-color:transparent;}
+:root{
+  --gold:#F7C948;--bg:#0B0F1E;--s1:#111827;--b1:#1E2847;--b2:#28345A;
+  --t1:#EDF1F7;--t2:#8892A4;--t3:#4A5568;--green:#22C55E;--r:14px;
+}
+
+/* ── Header ── */
+.pg-hdr{
+  position:sticky;top:0;z-index:100;
+  background:rgba(11,15,30,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--b1);
+  padding:14px 20px;
+  display:flex;align-items:center;gap:14px;
+}
+.pg-back{
+  width:36px;height:36px;background:var(--s1);border:1px solid var(--b2);
+  border-radius:10px;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:16px;color:var(--t2);text-decoration:none;
+  flex-shrink:0;transition:border-color .2s;
+}
+.pg-back:active{border-color:var(--gold);}
+.pg-mark{
+  width:32px;height:32px;background:var(--gold);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:monospace;font-size:11px;font-weight:700;color:#000;flex-shrink:0;
+}
+.pg-ttl{font-size:16px;font-weight:800;letter-spacing:-.3px;}
+.pg-sub{font-size:11px;color:var(--t3);margin-top:1px;}
+
+/* ── Body ── */
+.pg-body{padding:24px 20px 60px;max-width:640px;margin:0 auto;}
+
+/* ── Hero ── */
+.priv-hero{
+  background:var(--s1);border:1px solid var(--b1);border-radius:20px;
+  padding:24px;margin-bottom:28px;text-align:center;
+}
+.priv-hero-ico{font-size:44px;margin-bottom:12px;}
+.priv-hero-t{font-size:20px;font-weight:800;letter-spacing:-.4px;margin-bottom:6px;}
+.priv-hero-s{font-size:13px;color:var(--t2);line-height:1.6;max-width:280px;margin:0 auto 16px;}
+.priv-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.25);
+  border-radius:50px;padding:5px 14px;
+  font-size:11px;font-weight:700;color:var(--green);
+}
+
+/* ── Sections ── */
+.priv-sec{margin-bottom:24px;}
+.priv-sec-hdr{
+  display:flex;align-items:center;gap:10px;margin-bottom:12px;
+}
+.priv-sec-num{
+  width:28px;height:28px;background:var(--gold);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:800;color:#000;flex-shrink:0;
+}
+.priv-sec-ttl{font-size:15px;font-weight:800;color:var(--t1);}
+.priv-card{
+  background:var(--s1);border:1px solid var(--b1);border-radius:var(--r);
+  padding:16px;
+}
+.priv-card p{font-size:13.5px;color:var(--t2);line-height:1.72;margin-bottom:10px;}
+.priv-card p:last-child{margin-bottom:0;}
+.priv-card ul{padding-left:18px;margin-bottom:0;}
+.priv-card li{font-size:13.5px;color:var(--t2);line-height:1.72;margin-bottom:6px;}
+.priv-card li:last-child{margin-bottom:0;}
+.priv-card strong{color:var(--t1);font-weight:700;}
+.priv-card a{color:var(--gold);text-decoration:none;}
+.priv-card a:active{text-decoration:underline;}
+
+.highlight-box{
+  background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2);
+  border-radius:10px;padding:12px 14px;margin-top:10px;
+}
+.highlight-box p{color:var(--green)!important;font-weight:600!important;}
+
+.warn-box{
+  background:rgba(247,201,72,.07);border:1px solid rgba(247,201,72,.2);
+  border-radius:10px;padding:12px 14px;margin-top:10px;
+}
+.warn-box p{color:var(--gold)!important;}
+
+/* ── Data table ── */
+.data-table{width:100%;border-collapse:collapse;margin-top:4px;}
+.data-table th{
+  text-align:left;font-size:10px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.6px;color:var(--t3);padding:8px 10px;
+  border-bottom:1px solid var(--b2);
+}
+.data-table td{
+  font-size:12.5px;color:var(--t2);padding:9px 10px;
+  border-bottom:1px solid rgba(30,40,71,.6);vertical-align:top;line-height:1.5;
+}
+.data-table tr:last-child td{border-bottom:none;}
+.tag-local{
+  display:inline-block;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.2);
+  color:var(--green);border-radius:50px;padding:2px 8px;font-size:10px;font-weight:700;
+}
+.tag-cloud{
+  display:inline-block;background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.2);
+  color:#60a5fa;border-radius:50px;padding:2px 8px;font-size:10px;font-weight:700;
+}
+.tag-never{
+  display:inline-block;background:rgba(244,63,94,.12);border:1px solid rgba(244,63,94,.2);
+  color:#f87171;border-radius:50px;padding:2px 8px;font-size:10px;font-weight:700;
+}
+
+/* ── Contact footer ── */
+.priv-footer{
+  background:var(--s1);border:1px solid var(--b1);border-radius:var(--r);
+  padding:20px;text-align:center;margin-top:32px;
+}
+.priv-footer-ttl{font-size:14px;font-weight:800;margin-bottom:6px;}
+.priv-footer-s{font-size:12px;color:var(--t2);line-height:1.6;margin-bottom:12px;}
+.priv-footer a{color:var(--gold);}
+.priv-footer-meta{font-size:10px;color:var(--t3);margin-top:14px;padding-top:14px;border-top:1px solid var(--b1);}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="pg-hdr">
+  <a class="pg-back" href="javascript:history.back()" aria-label="Go back">←</a>
+  <div class="pg-mark">SX</div>
+  <div>
+    <div class="pg-ttl">Privacy Policy</div>
+    <div class="pg-sub">Stratix One · Updated January 2025</div>
+  </div>
+</div>
+
+<div class="pg-body">
+
+  <!-- Hero -->
+  <div class="priv-hero">
+    <div class="priv-hero-ico">🔒</div>
+    <div class="priv-hero-t">Your Privacy Matters</div>
+    <div class="priv-hero-s">Your business data belongs to you. We store it on your device, not on our servers.</div>
+    <div class="priv-badge">✓ No ads · No data selling · Offline-first</div>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="priv-sec">
+    <div class="priv-sec-hdr">
+      <div class="priv-sec-num">1</div>
+      <div class="priv-sec-ttl">Who We Are</div>
+    </div>
+    <div class="priv-card">
+      <p><strong>Stratix One</strong> is a free business management app built for Indian MSME shop owners and traders — specifically kirana shops, mobile stores, cloth merchants, and daily traders in Tier 2/3 cities.</p>
+      <p>The app is developed and operated by the <strong>Stratix</strong> team. For questions, contact us at <a href="mailto:privacy@stratix.app">privacy@stratix.app</a>.</p>
+    </div>
+  </div>
+
+  <!-- Section 2: Data We Collect -->
+  <div class="priv-sec">
+    <div class="priv-sec-hdr">
+      <div class="priv-sec-num">2</div>
+      <div class="priv-sec-ttl">What Data We Collect & Where It Lives</div>
+    </div>
+    <div class="priv-card">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>What It Includes</th>
+            <th>Where Stored</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google Account Info</strong></td>
+            <td>Name, email, profile photo — received from Google when you sign in</td>
+            <td><span class="tag-local">Device Only</span></td>
+          </tr>
+          <tr>
+            <td><strong>Ledger Entries</strong></td>
+            <td>Income and expense amounts, notes, timestamps</td>
+            <td><span class="tag-local">Device Only</span></td>
+          </tr>
+          <tr>
+            <td><strong>Customer (Khata) Data</strong></td>
+            <td>Customer names, phone numbers, due amounts, transaction history</td>
+            <td><span class="tag-local">Device Only</span></td>
+          </tr>
+          <tr>
+            <td><strong>Bills</strong></td>
+            <td>Bill items, amounts, customer names, timestamps</td>
+            <td><span class="tag-local">Device Only</span></td>
+          </tr>
+          <tr>
+            <td><strong>Notes</strong></td>
+            <td>Text notes you write in the app</td>
+            <td><span class="tag-local">Device Only</span></td>
+          </tr>
+          <tr>
+            <td><strong>Cloud Sync Data</strong></td>
+            <td>All of the above, if you enable Cloud Sync</td>
+            <td><span class="tag-cloud">Firebase (Encrypted)</span></td>
+          </tr>
+          <tr>
+            <td><strong>Advertising / Analytics</strong></td>
+            <td>We do not collect any</td>
+            <td><span class="tag-never">Never Collected</span></td>
+          </tr>
+          <tr>
+            <td><strong>Location Data</strong></td>
+            <td>We do not collect any</td>
+            <td><span class="tag-never">Never Collected</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="highlight-box">
+        <p>✅ By default, ALL your business data is stored only on your device using browser localStorage. It never leaves your phone unless you explicitly enable Cloud Sync.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="priv-sec">
+    <div class="priv-sec-hdr">
+      <div class="priv-sec-num">3</div>
+      <div class="priv-sec-ttl">How We Use Your Data</div>
+    </div>
+    <div class="priv-card">
+      <ul>
+        <li>To authenticate you securely via <strong>Google Sign-In</strong> (Firebase Authentication).</li>
+        <li>To display your name and business in the app.</li>
+        <li>To sync your business data across your devices <strong>only if you enable Cloud Sync</strong>.</li>
+        <li>To send daily business reminders if you enable notifications — this is device-only, no data is sent to a server.</li>
+      </ul>
+      <div class="highlight-box">
+        <p>✅ We do not use your data for advertising, analytics, or profiling. Your data is never sold.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="priv-sec">
+    <div class="priv-sec-hdr">
+      <div class="priv-sec-num">4</div>
+      <div class="priv-sec-ttl">Third-Party Services</div>
+    </div>
+    <div class="priv-card">
+      <p>Stratix One uses these third-party services. Each has their own privacy policy:</p>
+      <ul>
+        <li><strong>Firebase Authentication (Google)</strong> — Handles Google Sign-In securely. See <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>.</li>
+        <li><strong>Cloud Firestore (Google)</strong> — Stores your data in the cloud if you enable Cloud Sync. Data is encrypted at rest and in transit. See <a href="https://cloud.google.com/privacy" target="_blank">Google Cloud Privacy</a>.</li>
+        <li><strong>Google Fonts</strong> — Loads fonts (Plus Jakarta Sans, DM Mono). No personal data is shared.</li>
+        <li><strong>WhatsApp</strong> — Bills are shared through your device's WhatsApp app. We do not access or store your WhatsApp messages.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 5 -->
+  <div class="priv-sec">
+    <div class="priv-sec-hdr">
+      <div class="priv-sec-num">5</div>
+      <div class="priv-sec-ttl">Data Security</div>
+    </div>
+    <div class="priv-card">
+      <ul>
+        <li>Local data is stored in your device's browser storage — it is sandboxed and cannot be accessed by other apps.</li>
+        <li>Cloud-synced data is transmitted over <strong>HTTPS (TLS encryption)</strong> and stored in Google Firestore with strict security rules that allow only your account to access your data.</li>
+        <li>We do not store your data on our own servers.</li>
+        <li>Google Sign-In tokens are managed by Firebase and are never stored by us in plain text.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="priv-sec">
+    <div class="priv-sec-hdr">
+      <div class="priv-sec-num">6</div>
+      <div class="priv-sec-ttl">Your Rights & Data Control</div>
+    </div>
+    <div class="priv-card">
+      <p>You have full control over your data:</p>
+      <ul>
+        <li><strong>View</strong> — All your data is visible inside the app at any time.</li>
+        <li><strong>Export</strong> — Export all data as JSON or CSV from Settings → Local Backup.</li>
+        <li><strong>Delete Local Data</strong> — Go to Settings → Clear All Data to permanently delete everything on your device.</li>
+        <li><strong>Delete Cloud Data</strong> — Contact us at <a href="mailto:privacy@stratix.app">privacy@stratix.app</a> to request deletion of cloud-synced data.</li>
+        <li><strong>Sign Out</strong> — Tap your profile icon → Sign Out to disconnect your Google account from the app.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="priv-sec">
+    <div class="priv-sec-hdr">
+      <div class="priv-sec-num">7</div>
+      <div class="priv-sec-ttl">Children's Privacy</div>
+    </div>
+    <div class="priv-card">
+      <p>Stratix One is a business app intended for adults and business owners. It is <strong>not directed at children under the age of 13</strong>. We do not knowingly collect personal data from children. If you believe a child has provided data, contact us and we will delete it promptly.</p>
+    </div>
+  </div>
+
+  <!-- Section 8 -->
+  <div class="priv-sec">
+    <div class="priv-sec-hdr">
+      <div class="priv-sec-num">8</div>
+      <div class="priv-sec-ttl">Changes to This Policy</div>
+    </div>
+    <div class="priv-card">
+      <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app. Continued use of the app after changes constitutes acceptance of the updated policy. The "last updated" date at the bottom reflects the most recent revision.</p>
+    </div>
+  </div>
+
+  <!-- Contact footer -->
+  <div class="priv-footer">
+    <div class="priv-footer-ttl">📬 Questions or Concerns?</div>
+    <div class="priv-footer-s">If you have any questions about this Privacy Policy or want to request data deletion, please reach out:</div>
+    <a href="mailto:privacy@stratix.app" style="display:inline-block;background:#F7C948;color:#000;font-size:14px;font-weight:800;padding:11px 24px;border-radius:50px;text-decoration:none;">privacy@stratix.app</a>
+    <div class="priv-footer-meta">Stratix One v1.0 · Privacy Policy · Last Updated: January 2025<br/>This policy applies to the Stratix One Android app and web app.</div>
+  </div>
+
+</div>
+
+</body>
+</html>
